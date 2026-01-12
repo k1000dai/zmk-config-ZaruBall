@@ -116,10 +116,26 @@
 
             label = "MKP_EXIT_AML";
         };
+
+        detach: detach {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp D>;
+            label = "DETACH";
+        };
     };
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        raycast {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <75 72>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -177,7 +193,7 @@
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &trans  &trans  &trans  &trans              &bt BT_CLR_ALL    &bt BT_CLR        &none             &none             &none             &none
 &trans  &none         &kp LS(LC(TAB))  &kp LC(TAB)   &kp LG(LEFT)  &kp LG(RIGHT)            &trans  &trans  &trans  &trans              &kp LC(DOWN)      &kp LC(UP)        &kp LC(LEFT)      &kp LC(RIGHT)     &none             &kp BACKSPACE
-&trans  &none         &none            &none         &kp LA(F)     &none          &none     &trans  &trans  &trans  &trans    &ind_bat  &out OUT_TOG      &none             &none             &none             &kp LA(U)         &kp LA(I)
+&trans  &none         &none            &detach       &kp LA(F)     &none          &none     &trans  &trans  &trans  &trans    &ind_bat  &out OUT_TOG      &none             &none             &none             &kp LA(U)         &kp LA(I)
 &trans  &none         &none            &none         &none         &none          &none     &trans  &trans  &trans  &trans    &ind_con  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(T)
 &trans  &kp C_MUTE                     &trans        &trans        &trans         &trans                                      &trans    &kp DEL                                                                                   &trans
             >;
