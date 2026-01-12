@@ -41,7 +41,7 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <2 3>;
+            if-layers = <3 4>;
             then-layer = <4>;
         };
     };
@@ -63,14 +63,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LALT LANG2>, <&mo RAISE>, <&mo MOUSE>;
+            bindings = <&mt LALT LANG2>, <&mo 4>, <&mo 1>;
         };
 
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo MOUSE>;
+            bindings = <&mt RCTL LANG1>, <&mo 4>, <&mo 1>;
         };
 
         // Customed Hold-Tap for SandS
@@ -96,7 +96,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&tog MOUSE &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&tog 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_layer_0";
         };
 
@@ -112,7 +112,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl MOUSE>;
+                <&sl 1>;
 
             label = "MKP_EXIT_AML";
         };
@@ -143,11 +143,11 @@
             display-name = "Base";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&kp ESC     &kp N1      &kp N2  &kp N3    &kp N4  &kp N5                         &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                 &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp ESCAPE  &kp Q       &kp W   &kp E     &kp R   &kp T                          &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY               &kp Y         &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp TAB     &kp A       &kp S   &kp D     &kp F   &kp G      &kp INS             &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp LBKT   &kp H         &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHIFT  &kp Z       &kp X   &kp C     &kp V   &kp B      &kp GRAVE           &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp RBKT   &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-&td0        &kp C_MUTE          &kp LWIN  &mo 4   &kp LANG2  &lt SCROLL SPACE                                                            &lt 3 RET  &kp LANG1                                           &td1
+&kp ESC     &kp N1      &kp N2  &kp N3    &kp N4  &kp N5                    &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                 &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0    &kp DEL
+&kp ESCAPE  &kp Q       &kp W   &kp E     &kp R   &kp T                     &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY               &kp Y         &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp TAB     &kp A       &kp S   &kp D     &kp F   &kp G      &kp INS        &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp LBKT   &kp H         &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHIFT  &kp Z       &kp X   &kp C     &kp V   &kp B      &kp GRAVE      &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp RBKT   &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+&td0        &kp C_MUTE          &kp LWIN  &mo 4   &kp LANG2  &lt 3 SPACE                                                            &lt 4 RET  &kp LANG1                                           &td1
             >;
         };
 
@@ -193,7 +193,7 @@
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &trans  &trans  &trans  &trans              &bt BT_CLR_ALL    &bt BT_CLR        &none             &none             &none             &none
 &trans  &none         &kp LS(LC(TAB))  &kp LC(TAB)   &kp LG(LEFT)  &kp LG(RIGHT)            &trans  &trans  &trans  &trans              &kp LC(DOWN)      &kp LC(UP)        &kp LC(LEFT)      &kp LC(RIGHT)     &none             &kp BACKSPACE
-&trans  &none         &none            &detach       &kp LA(F)     &none          &none     &trans  &trans  &trans  &trans    &ind_bat  &out OUT_TOG      &none             &none             &none             &kp LA(U)         &kp LA(I)
+&trans  &kp LS(A)     &none            &detach       &kp LA(F)     &none          &none     &trans  &trans  &trans  &trans    &ind_bat  &out OUT_TOG      &none             &none             &none             &kp LA(U)         &kp LA(I)
 &trans  &none         &none            &none         &none         &none          &none     &trans  &trans  &trans  &trans    &ind_con  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(T)
 &trans  &kp C_MUTE                     &trans        &trans        &trans         &trans                                      &trans    &kp DEL                                                                                   &trans
             >;
