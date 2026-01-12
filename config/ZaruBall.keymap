@@ -199,6 +199,20 @@
             bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_4>;
             label = "SCREENSHOT";
         };
+
+        tmux_expandright: tmux_expandright {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp LA(RIGHT)>;
+            label = "TMUX_EXPANDRIGHT";
+        };
+
+        tmux_expandleft: tmux_expandleft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp LA(LEFT_ARROW)>;
+            label = "TMUX_EXPANDLEFT";
+        };
     };
 };
 
@@ -267,11 +281,11 @@
             display-name = "Adjust";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &trans  &trans  &trans  &trans              &bt BT_CLR_ALL    &bt BT_CLR        &none             &none             &none             &none
-&trans  &none         &kp LS(LC(TAB))  &kp LC(TAB)   &kp LG(LEFT)  &kp LG(RIGHT)            &trans  &trans  &trans  &trans              &kp LC(DOWN)      &kp LC(UP)        &kp LC(LEFT)      &kp LC(RIGHT)     &none             &kp BACKSPACE
-&trans  &none         &tmuxs           &detach       &kp LA(F)     &mkp LCLK      &none     &trans  &trans  &trans  &trans    &ind_bat  &tmuxh            &tmuxj            &tmuxk            &tmuxl            &kp LA(U)         &kp LA(I)
-&trans  &none         &none            &tmuxc        &tmuxv        &mkp RCLK      &none     &trans  &trans  &trans  &trans    &ind_con  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(T)
-&trans  &kp C_MUTE                     &trans        &trans        &trans         &trans                                      &trans    &kp DEL                                                                                   &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans                      &bt BT_CLR_ALL     &bt BT_CLR        &none             &none             &none             &none
+&trans  &none         &kp LS(LC(TAB))  &kp LC(TAB)   &mkp MB4      &mkp MB5                &trans  &trans  &trans  &trans                      &kp LC(DOWN)       &kp LC(UP)        &kp LC(LEFT)      &kp LC(RIGHT)     &none             &kp BACKSPACE
+&trans  &none         &tmuxs           &detach       &kp LA(F)     &mkp LCLK     &none     &trans  &trans  &trans  &trans    &ind_bat          &tmuxh             &tmuxj            &tmuxk            &tmuxl            &kp LA(U)         &kp LA(I)
+&trans  &none         &none            &tmuxc        &tmuxv        &mkp RCLK     &none     &trans  &trans  &trans  &trans    &ind_con          &kp LG(NUMBER_1)   &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(T)
+&trans  &kp C_MUTE                     &trans        &trans        &trans        &trans                                      &tmux_expandleft  &tmux_expandright                                                                          &trans
             >;
         };
 
