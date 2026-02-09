@@ -242,11 +242,11 @@
             display-name = "Base";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&kp ESC       &kp N1      &kp N2  &kp N3        &kp N4  &kp N5                          &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                            &kp NUMBER_6   &kp N7  &kp N8     &kp N9   &kp N0    &kp DEL
-&kp ESCAPE    &kp Q       &kp W   &kp E         &kp R   &kp T                           &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                          &kp Y          &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp TAB       &kp A       &kp S   &kp D         &kp F   &kp G      &kp C_VOLUME_UP      &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp LG(LS(NUMBER_4))  &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHIFT    &kp Z       &kp X   &kp C         &kp V   &kp B      &kp C_VOLUME_DOWN    &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp BACKSPACE         &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-&kp LEFT_GUI  &kp C_MUTE          &kp LEFT_ALT  &mo 4   &kp LANG2  &lt 2 SPACE                                                                  &lt 3 RET             &commandlang1                                        &td1
+&kp ESC           &kp N1      &kp N2  &kp N3        &kp N4  &kp N5                          &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                            &kp NUMBER_6    &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB           &kp Q       &kp W   &kp E         &kp R   &kp T                           &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                          &kp Y           &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A       &kp S   &kp D         &kp F   &kp G      &kp C_VOLUME_UP      &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp LG(LS(NUMBER_4))  &kp H           &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHIFT        &kp Z       &kp X   &kp C         &kp V   &kp B      &kp C_VOLUME_DOWN    &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp BACKSPACE         &kp N           &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_GUI
+&kp LEFT_ALT      &kp C_MUTE          &kp LEFT_GUI  &mo 4   &kp LANG2  &lt 2 SPACE                                                                  &lt 3 RET             &kp LANGUAGE_1                                        &td1
             >;
         };
 
