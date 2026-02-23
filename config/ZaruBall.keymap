@@ -292,8 +292,8 @@
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans                      &bt BT_CLR_ALL     &bt BT_CLR        &none             &none             &none             &none
 &trans  &none         &kp LS(LC(TAB))  &kp LC(TAB)   &mkp MB4      &mkp MB5                &trans  &trans  &trans  &trans                      &kp LC(DOWN)       &kp LC(UP)        &kp LC(LEFT)      &kp LC(RIGHT)     &none             &kp BACKSPACE
-&trans  &none         &tmuxs           &detach       &kp LA(F)     &mkp LCLK     &none     &trans  &trans  &trans  &trans    &ind_bat          &tmuxh             &tmuxj            &tmuxk            &tmuxl            &kp LA(U)         &kp LA(I)
-&trans  &none         &none            &tmuxc        &tmuxv        &mkp RCLK     &none     &trans  &trans  &trans  &trans    &ind_con          &kp LG(NUMBER_1)   &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(T)
+&trans  &none         &tmuxs           &detach       &kp LA(F)     &mkp LCLK     &none     &trans  &trans  &trans  &trans    &none             &tmuxh             &tmuxj            &tmuxk            &tmuxl            &kp LA(U)         &kp LA(I)
+&trans  &none         &none            &tmuxc        &tmuxv        &mkp RCLK     &none     &trans  &trans  &trans  &trans    &none             &kp LG(NUMBER_1)   &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(T)
 &trans  &kp C_MUTE                     &trans        &trans        &trans        &trans                                      &tmux_expandleft  &tmux_expandright                                                                          &trans
             >;
         };
