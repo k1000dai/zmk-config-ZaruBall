@@ -242,11 +242,11 @@
             display-name = "Base";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&kp DEL     &kp N1      &kp N2  &kp N3        &kp N4  &kp N5                          &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                            &kp NUMBER_6    &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp ESCAPE  &kp Q       &kp W   &kp E         &kp R   &kp T                           &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                          &kp Y           &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp TAB     &kp A       &kp S   &kp D         &kp F   &kp G      &kp C_VOLUME_UP      &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp LG(LS(NUMBER_4))  &kp H           &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHIFT  &kp Z       &kp X   &kp C         &kp V   &kp B      &kp C_VOLUME_DOWN    &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp BACKSPACE         &kp N           &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-&kp LCTRL   &kp C_MUTE          &kp LEFT_GUI  &mo 4   &kp LANG2  &lt 2 SPACE                                                                  &lt 3 RET             &kp LANGUAGE_1                                        &kp UNDERSCORE
+&kp ESCAPE    &kp N1      &kp N2  &kp N3        &kp N4  &kp N5                          &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                            &kp NUMBER_6    &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB       &kp Q       &kp W   &kp E         &kp R   &kp T                           &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                          &kp Y           &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL     &kp A       &kp S   &kp D         &kp F   &kp G      &kp C_VOLUME_UP      &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp LG(LS(NUMBER_4))  &kp H           &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHIFT    &kp Z       &kp X   &kp C         &kp V   &kp B      &kp C_VOLUME_DOWN    &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp BACKSPACE         &kp N           &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+&kp LEFT_ALT  &kp C_MUTE          &kp LEFT_GUI  &mo 4   &kp LANG2  &lt 2 SPACE                                                                  &lt 3 RET             &kp LANGUAGE_1                                        &kp UNDERSCORE
             >;
         };
 
@@ -256,9 +256,9 @@
             bindings = <
 &to_layer_0 ESC     &to_layer_0 N1  &to_layer_0 N2  &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5               &trans  &trans  &trans  &trans                     &to_layer_0 N6      &to_layer_0 N7  &to_layer_0 N8     &to_layer_0 N9      &to_layer_0 N0         &to_layer_0 MINUS
 &to_layer_0 ESCAPE  &to_layer_0 Q   &to_layer_0 W   &to_layer_0 E   &to_layer_0 R   &to_layer_0 T                &trans  &trans  &trans  &trans                     &to_layer_0 Y       &to_layer_0 U   &to_layer_0 I      &to_layer_0 O       &to_layer_0 P          &to_layer_0 BACKSPACE
-&to_layer_0 TAB     &to_layer_0 A   &to_layer_0 S   &to_layer_0 D   &to_layer_0 F   &mkp LCLK       &mkp MB4     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &kp H               &mkp LCLK       &mkp MCLK          &mkp RCLK           &to_layer_0 SEMICOLON  &to_layer_0 ENTER
-&to_layer_0 LSHIFT  &to_layer_0 Z   &to_layer_0 X   &to_layer_0 C   &to_layer_0 V   &mkp RCLK       &mkp MB5     &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &kp N               &to_layer_0 M   &to_layer_0 COMMA  &to_layer_0 PERIOD  &to_layer_0 SLASH      &to_layer_0 RCTRL
-&trans              &trans                          &trans          &trans          &trans          &mkp MCLK                                      &trans           &to_layer_0 ESCAPE                                                                                &trans
+&to_layer_0 TAB     &to_layer_0 A   &to_layer_0 S   &to_layer_0 D   &to_layer_0 F   &to_layer_0 G   &mkp MB4     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &kp H               &to_layer_0 J   &to_layer_0 K      &to_layer_0 L       &to_layer_0 SEMICOLON  &to_layer_0 ENTER
+&to_layer_0 LSHIFT  &to_layer_0 Z   &to_layer_0 X   &to_layer_0 C   &to_layer_0 V   &to_layer_0 B   &mkp MB5     &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &kp N               &to_layer_0 M   &to_layer_0 COMMA  &to_layer_0 PERIOD  &to_layer_0 SLASH      &to_layer_0 RCTRL
+&trans              &trans                          &trans          &mkp LCLK       &mkp RCLK       &mkp MCLK                                      &trans           &to_layer_0 ESCAPE                                                                                &trans
             >;
         };
 
