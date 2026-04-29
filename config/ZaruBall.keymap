@@ -233,6 +233,16 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <75 72>;
         };
+
+        leftclick {
+            bindings = <&mkp LCLK>;
+            key-positions = <45 46>;
+        };
+
+        rightclick {
+            bindings = <&mkp RCLK>;
+            key-positions = <47 46>;
+        };
     };
 
     keymap {
